@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #4133329c, #4133329c), url(https://static6.depositphotos.com/1004338/648/v/950/depositphotos_6489591-stock-illustration-mathematics-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container {
+    width: 341px;
+}
+
+#display {
+    grid-column: span 4;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#main-display {
+    font-size: 38px;
+    color: #fff;
+    padding: 15px 10px 10px 10px;
+    height: 80px;
+}
+
+#second-display {
+    font-size: 32px;
+    color: #afafaf;
+    padding: 5px 10px 15px 10px;
+    height: 65px;
+    word-wrap: break-word;
+}
+
+#box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,80px);
+    grid-template-rows:150px repeat(5,80px);
+    gap: 7px;
+    background-color: #000;
+    padding: 10px;
+    padding-top: 10px;
+    border-radius: 15px;
+    box-shadow: 6px 6px 31px 0px #7a7a7a;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    line-height: 75px;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #444;
+    font-size: 20px;
+    line-height: 80px;
+}
+
+#equal {
+    background-color: #427e04;
+}
+
+#equal:hover {
+    background-color: #5e9921;
+}
+
+#operand {
+    color: #5e9921;
+    font-size: 32px;
+    
+}
+
+#operand:hover {
+    font-size: 26px;
+}
+
+#clear-all {
+    color: #c50000;
+}
